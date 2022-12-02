@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const FeedbackList = ({ title, types, onChangeFeedback }) => {
   return (
     <>
@@ -15,4 +17,10 @@ export const FeedbackList = ({ title, types, onChangeFeedback }) => {
       </ul>
     </>
   );
+};
+
+FeedbackList.propTypes = {
+  title: PropTypes.string.isRequired,
+  types: PropTypes.node.isRequired,
+  onChangeFeedback: PropTypes.func.isRequired,
 };

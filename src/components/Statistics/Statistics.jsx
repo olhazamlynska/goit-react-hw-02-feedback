@@ -1,11 +1,11 @@
+import PropTypes from 'prop-types';
+
 export const Statistics = ({
   title,
-  types,
+  types: { good, neutral, bad },
   totalFeedback,
   positivePercentage,
 }) => {
-  const { good, neutral, bad } = types;
-
   return (
     <>
       <h2>{title}</h2>
@@ -33,4 +33,17 @@ export const Statistics = ({
       </ul>
     </>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  types: PropTypes.shape(
+    PropTypes.exact({
+      good: PropTypes.number.isRequired,
+      neutral: PropTypes.number.isRequired,
+      bad: PropTypes.number.isRequired,
+    }).isRequired
+  ),
+  totalFeedback: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
