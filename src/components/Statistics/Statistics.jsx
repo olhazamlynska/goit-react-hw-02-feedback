@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import {
   StatisticsItem,
   StatisticsList,
-  StatisticsSpan,
 } from 'components/Statistics/Statistics.styled';
 export const Statistics = ({
   good,
@@ -15,27 +14,27 @@ export const Statistics = ({
     <>
       <StatisticsList>
         <StatisticsItem>
-          <StatisticsSpan> Good:</StatisticsSpan>
+          <span> Good:</span>
 
-          <StatisticsSpan>{good}</StatisticsSpan>
+          <span>{good}</span>
         </StatisticsItem>
         <StatisticsItem>
-          <StatisticsSpan> Neutral:</StatisticsSpan>
+          <span> Neutral:</span>
 
-          <StatisticsSpan>{neutral}</StatisticsSpan>
+          <span>{neutral}</span>
         </StatisticsItem>
         <StatisticsItem>
-          <StatisticsSpan> Bad:</StatisticsSpan>
+          <span> Bad:</span>
 
-          <StatisticsSpan>{bad}</StatisticsSpan>
+          <span>{bad}</span>
         </StatisticsItem>
         <StatisticsItem>
-          <StatisticsSpan> Total:</StatisticsSpan>
-          <StatisticsSpan>{total}</StatisticsSpan>
+          <span> Total:</span>
+          <span>{total}</span>
         </StatisticsItem>
         <StatisticsItem>
-          <StatisticsSpan> Positive feedback:</StatisticsSpan>
-          <StatisticsSpan>{positivePercentage}%</StatisticsSpan>
+          <span> Positive feedback:</span>
+          <span>{positivePercentage}%</span>
         </StatisticsItem>
       </StatisticsList>
     </>

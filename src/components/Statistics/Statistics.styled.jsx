@@ -11,7 +11,6 @@ export const StatisticsList = styled.ul`
 
 export const StatisticsItem = styled.li`
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   width: 200px;
