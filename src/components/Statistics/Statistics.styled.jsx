@@ -18,5 +18,3 @@ export const StatisticsItem = styled.li`
   height: 40px;
   border-bottom: ${p => p.theme.borders.normal};
 `;
-
-export const StatisticsSpan = styled.span``;
